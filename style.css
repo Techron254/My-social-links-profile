@@ -17,14 +17,12 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: hsl(0, 0%, 8%);
-    min-width: 375px;
-    max-width: 1440px;
-    
+
 }
 #profile-image {
 
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 10rem;
 }
 h2 {
@@ -43,15 +41,15 @@ h2 {
 .linksbar {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     font-weight: 700;
 
 }
 a {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
-    padding: 12px;
-    width: 250px;
+    padding: 20px;
+    width: 400px;
     background-color:  hsl(0, 0%, 20%);
     border-radius:0.5rem;
 }
@@ -64,10 +62,10 @@ a {
     text-align: center;
     margin: 10rem auto;
     padding: 2rem;
-    width: 310px;
+    width: 500px;
     height: max-content;
     background-color: hsl(0, 0%, 12%);
-    border-radius: 0.5rem; 
+    border-radius: 0.5rem;
     box-shadow: 0 0 50px 5px hsla(270, 7%, 94%, 0.2);
 
 }
@@ -78,11 +76,11 @@ a {
     gap: 5px;
 }
 a:link {
-    
+
 }
 
 a:visited {
-    
+
 }
 
 a:hover {
@@ -93,4 +91,21 @@ a:active {
     background-color: hsl(0, 85%, 56%);
     position: relative;
     top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+
+    }
+    .links-profile{
+        margin-top: 2rem;
+        width: 300px;
+        height: auto;
+    }
+    a{
+        width: 250px;
+        padding: 1rem;
+        margin: 0;
+    }
+
 }
