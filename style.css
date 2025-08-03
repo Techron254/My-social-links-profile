@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif ;
+    line-height: clamp(1.3em, calc(1em + 1vh), 1.6em);
 }
 body {
     display: flex;
@@ -20,62 +21,63 @@ body {
 
 }
 #profile-image {
-
     width: 150px;
     height: 150px;
-    border-radius: 10rem;
+    border-radius: 50%;
 }
 h2 {
-    color: hsl(0, 0%, 100%);
-    font-weight: 700;
+    color: transparent;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right, hsl(104, 94%, 52%),rgb(202, 237, 7), rgb(255, 255, 255), hsl(120, 88%, 53%));
+    background-clip: text;
+    font-size: 2rem;
 }
 #location {
-
-    color: hsl(75, 94%, 57%);
+    color: hsl(64, 75%, 54%);
     font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 .quote {
     color: hsl(0, 0%, 100%);
-
+    margin-bottom: 1rem;
 }
 .linksbar {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
     font-weight: 700;
-
+    width: 90%;
 }
 a {
-    color: hsl(0, 0%, 100%);
+    color: hsl(135, 96%, 50%);
     text-decoration: none;
-    padding: 20px;
-    width: 400px;
+    padding: 1em;
+    width: 100%;
     background-color:  hsl(0, 0%, 20%);
     border-radius:0.5rem;
+    border: 1px solid hsl(135, 96%, 50%);
 }
 .links-profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10%;
     text-align: center;
-    margin: 10rem auto;
-    padding: 2rem;
-    width: 500px;
-    height: max-content;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80vw;
     background-color: hsl(0, 0%, 12%);
     border-radius: 0.5rem;
     box-shadow: 0 0 50px 5px hsla(270, 7%, 94%, 0.2);
-
+    border: 1px solid hsl(135, 96%, 50%);
 }
 .image-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-}
-a:link {
-
 }
 
 a:visited {
@@ -84,27 +86,25 @@ a:visited {
 
 a:hover {
     color: hsl(0, 0%, 8%);
-    background-color: hsl(75, 94%, 57%);
+    background-color: hsl(135, 96%, 50%);
 }
 a:active {
-    background-color: hsl(0, 85%, 56%);
+    background-color: hsla(135, 96%, 50%, 0.422);
     position: relative;
     top: 5px;
+    border: 1px solid hsla(135, 96%, 50%, 0.279);
 }
 
-@media screen and (max-width: 600px) {
-    body{
-
+@media screen and (min-width: 600px) {
+    * {
+        font-size: calc(1rem + 0.5vw);
     }
-    .links-profile{
-        margin-top: 2rem;
-        width: 300px;
-        height: auto;
+    .links-profile {
+        width: 40vw;
+        min-width: 500px;
+        padding: 1em;
     }
-    a{
-        width: 250px;
-        padding: 1rem;
-        margin: 0;
+    a {
+        width: 100%;
     }
-
 }
