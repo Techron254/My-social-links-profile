@@ -65,9 +65,10 @@ a {
     align-items: center;
     gap: 10%;
     text-align: center;
-    margin: 1rem auto;
+    margin: auto;
+    margin-top: 2rem;
     padding: 1rem;
-    width: 80vw;
+    width: 85vw;
     background-color: hsl(0, 0%, 12%);
     border-radius: 0.5rem;
     box-shadow: 0 0 50px 5px hsla(270, 7%, 94%, 0.2);
