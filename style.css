@@ -68,6 +68,7 @@ a {
     text-align: center;
     margin: auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 1rem;
     width: 85vw;
     background-color: hsl(0, 0%, 12%);
